@@ -1,14 +1,30 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>Meu Portfólio</title>
     <style>
         body {
-            background-color: blue;
-            color: white; /* opcional: define a cor do texto como branco para contrastar com o fundo azul */
+            background-color: white; /* Define o fundo branco */
+            margin: 0; /* Remove as margens padrão do corpo */
+            display: flex; /* Usa flexbox para alinhar o conteúdo */
+            justify-content: center; /* Alinha horizontalmente ao centro */
+            align-items: center; /* Alinha verticalmente ao centro */
+            height: 100vh; /* Define a altura para ocupar toda a tela */
+        }
+        .content {
+            background-color: blue; /* Define a cor de fundo azul */
+            color: white; /* Define a cor do texto como branco */
+            padding: 20px; /* Adiciona um espaçamento interno */
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+            text-align: center; /* Alinha o texto ao centro */
+            max-width: 80%; /* Define a largura máxima do conteúdo */
         }
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Este é o meu portfólio.</p>
+    <div class="content">
+        <h1>Olá, Mundo!</h1>
+        <p>Este é o meu portfólio.</p>
+    </div>
 </body>
 </html>
