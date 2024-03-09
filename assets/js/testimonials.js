@@ -1,4 +1,4 @@
-"use strict";
+/*"use strict";
 
 const slider = tns({
     container: '.testimonial-carousel',
@@ -28,4 +28,4 @@ const slider = tns({
     controls: false,
     speed: 800,
 
-});
+});*\
