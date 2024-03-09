@@ -1,7 +1,7 @@
 "use strict";
 
 /* ======= responsive pricing table ======== */
-
+/*
 const pricingTabs = document.querySelectorAll('#pricing-tabs .pricing-tab');
 const pricingTable = document.querySelector('#pricing-table');
 const pricingDataCells = pricingTable.querySelectorAll('.pricing-data');
@@ -40,6 +40,6 @@ pricingTabs.forEach((pricingTab) => {
     });
 });
 
-
+*\
 
 /* ======= FAQ accordion ======= */
