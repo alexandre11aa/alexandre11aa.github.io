@@ -6,4 +6,4 @@ Repositório de códigos do meu portfólio pessoal.
 
 Para acessar o portfólio acesse:
 
-https://www.alexandre11aa.github.io/
+https://alexandre11aa.github.io/
