@@ -2,7 +2,7 @@
 
 Repositório de códigos do meu portfólio pessoal.
 
-# Anexos
+### Anexos
 
 Para visualizar o portfólio acesse:
 
