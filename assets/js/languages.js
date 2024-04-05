@@ -1,0 +1,83 @@
+// translation.js
+let isTranslated = false;
+
+let originalTexts = {
+    'apresentation': "Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!",
+    'about_me': "Sobre mim",
+    'projects': "Projetos",
+    'resume': "Resumo",
+    'education': "Educação",
+    'contact': "Contate-me",
+
+    'index_professional_field': "Ciência de Dados | Análise de Dados | Estatística | Python",
+    'index_about_me_1': "Sou Bacharel em Engenharia Civil, e Mestrando em Tecnologia da Informação seguindo pela linha de pesquisa em Inteligência Computacional. Minha especialidade é em Ciência de Dados. Confira alguns dos",
+    'index_about_me_2': "programas, algoritmos, estudos e projetos",
+    'index_about_me_3': "que desenvolvi.",
+    'index_button_1': "Veja meus",
+    'index_button_2': "Veja um",
+    'index_abilities_1': "Habilidades",
+    'index_abilities_2': "Desde o início da minha formação, percebi uma forte afinidade com a matemática e a programação. Ao longo do tempo, tenho aprimorado e desenvolvido minhas habilidades nessas áreas, especialmente em programação e análise de dados. Meu objetivo é traduzir números em ações concretas e positivas na realidade, desenvolvendo modelos e soluções para problemas complexos por meio de dados.",
+    
+    'contact_apresentation': "Interessado em entrar em contato comigo? Você pode preencher o formulário de contato abaixo ou enviar um e-mail para o endereço",
+    'contact_social': "Quer se conectar comigo? Entre em contato em uma das redes sociais abaixo.",
+    'contact_title': "Entrar em Contato",
+    'contact_name': "Nome",
+    'contact_subject_1': "Selecione o assunto em que está interessado...",
+    'contact_subject_2': "Análises",
+    'contact_subject_3': "Códigos",
+    'contact_subject_4': "Estudos",
+    'contact_subject_5': "Gráficos",
+    'contact_abount_me_1': "Interessado em me conhecer melhor? Confira a página",
+    'contact_abount_me_2': "Sobre mim",
+    'contact_your_message_1': "Sua mensagem",
+    'contact_your_message_2': "Escreva sua mensagem",
+    'contact_your_message_3': "Enviar",
+}; 
+
+let translatedTexts = {
+    'apresentation': "Hi, my name is Alexandre Estrela de Lacerda Nobrega. Feel free to explore my portfolio!",
+    'about_me': "About me",
+    'projects': "Projects",
+    'resume': "Resume",
+    'education': "Education",
+    'contact': "Contact me",
+    
+    'index_professional_field': "Data Science | Data Analysis | Estatistic | Python",
+    'index_about_me_1': "I have a Bachelor's degree in Civil Engineering, and I am a Master's student in Information Technology following the line of research in Computational Intelligence. My specialty is in Data Science. Check out some of the",
+    'index_about_me_2': "programs, algorithms, studies and projects",
+    'index_about_me_3': "I developed.",
+    'index_button_1': "See my",
+    'index_button_2': "See a",
+    'index_abilities_1': "Skills",
+    'index_abilities_2': "Since the beginning of my education, I have noticed a strong affinity for mathematics and programming. Over time, I have honed and developed my skills in these areas, particularly in programming and data analysis. My goal is to translate numbers into concrete, positive actions in reality, developing models and solutions for complex problems through data.",
+    
+    'contact_apresentation': "Interessado em entrar em contato comigo? Você pode preencher o formulário de contato abaixo ou enviar um e-mail para o endereço",
+    'contact_social': "Quer se conectar comigo? Entre em contato em uma das redes sociais abaixo.",
+    'contact_title': "Entrar em Contato",
+    'contact_name': "Nome",
+    'contact_subject_1': "Selecione o assunto em que está interessado...",
+    'contact_subject_2': "Análises",
+    'contact_subject_3': "Códigos",
+    'contact_subject_4': "Estudos",
+    'contact_subject_5': "Gráficos",
+    'contact_abount_me_1': "Interessado em me conhecer melhor? Confira a página",
+    'contact_abount_me_2': "Sobre mim",
+    'contact_your_message_1': "Sua mensagem",
+    'contact_your_message_2': "Escreva sua mensagem",
+    'contact_your_message_3': "Enviar",
+};
+
+function translateToEnglish() {
+  isTranslated = !isTranslated;
+  const elements = document.querySelectorAll('[data-translate]');
+  elements.forEach(element => {
+    const key = element.id;
+    if (isTranslated) {
+      element.innerText = translatedTexts[key];
+    } else {
+      element.innerText = originalTexts[key];
+    }
+  });
+}
+
+document.getElementById('translateToggle').addEventListener('click', translateToEnglish);
