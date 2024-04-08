@@ -2,6 +2,7 @@
 let isTranslated = false;
 
 let originalTexts = {
+    
     'apresentation': "Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!",
     'about_me': "Sobre mim",
     'projects': "Projetos",
@@ -32,7 +33,7 @@ let originalTexts = {
     'contact_contact': "Contato",
     'contact_apresentation_1': "Interessado em entrar em contato comigo? Você pode preencher o formulário de contato abaixo ou enviar um e-mail para o endereço ",
     'contact_apresentation_2': "alexandrestrelaln@gmail.com",
-    'contact_apresentation_2': ".",
+    'contact_apresentation_3': ".",
     'contact_social': "Quer se conectar comigo? Entre em contato em uma das redes sociais abaixo.",
     'contact_title': "Entrar em Contato",
     'contact_subject_1': "Selecione o assunto em que está interessado...",
@@ -45,6 +46,7 @@ let originalTexts = {
 }; 
 
 let translatedTexts = {
+    
     'apresentation': "Hi, my name is Alexandre Estrela de Lacerda Nobrega. Feel free to explore my portfolio!",
     'about_me': "About me",
     'projects': "Projects",
@@ -75,6 +77,7 @@ let translatedTexts = {
     'contact_contact': "Contact",
     'contact_apresentation_1': "Interested in getting in touch with me? You can fill out the contact form below or send an email to the address ",
     'contact_apresentation_2': "alexandrestrelaln@gmail.com",
+    'contact_apresentation_3': ".",
     'contact_social': "Want to connect with me? Get in touch on one of the social media platforms below.",
     'contact_title': "Get in Touch",
     'contact_subject_1': "Select the subject you are interested in...",
