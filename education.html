@@ -19,7 +19,6 @@
 <!-- Menu -->
 
 <body>
-
 	<header class="header text-center">
 		<div class="force-overflow">
 			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Alexandre Estrela</a></h1>
@@ -32,7 +31,7 @@
 					<div class="profile-section pt-3 pt-lg-0">
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/photos/alexandre_1.png"
 							alt="image">
-						<div class="bio mb-3">Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!</div>
+						<div class="bio mb-3" id="apresentation" data-translate="true">Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!</div>
 						<ul class="social-list list-inline py-2 mx-auto">
 							<li class="list-inline-item"><a href="https://www.linkedin.com/in/alexandre11aa/"><i
 										class="fab fa-linkedin-in fa-fw"></i></a></li>
@@ -47,30 +46,36 @@
 					</div>
 					<ul class="navbar-nav flex-column text-start">
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>Sobre mim</a>
+							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>
+								<span id="about_me" data-translate="true">Sobre mim</span></a>
 						</li>
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="projects.html"><i
-									class="fas fa-laptop-code fa-fw me-2"></i>Projetos</a>
+							<a class="nav-link" href="projects.html"><i class="fas fa-laptop-code fa-fw me-2"></i>
+							<span id="projects" data-translate="true">Projetos</span></a>
 						</li>
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resumo</a>
+							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>
+							<span id="resume" data-translate="true">Resumo</span></a>
 						</li>
 						<li class="nav-item scrollto active">
-							<a class="nav-link active" href="education.html"><i
-									class="fas fa-certificate fa-fw me-2"></i>Educação<span
-									class="sr-only">(current)</span></a>
+							<a class="nav-link active" href="education.html"><i class="fas fa-certificate fa-fw me-2"></i>
+							<span id="education" data-translate="true">Educação</span>
+							<span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
 					<div class="my-2">
-						<a class="btn btn-primary scrollto" href="contact.html" target="_blank"><i
-								class="fas fa-paper-plane me-2"></i>Contate-me</a>
+						<a class="btn btn-primary scrollto" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>
+						<span id="contact" data-translate="true">Contate-me</span></a>
 					</div>
 					<div class="dark-mode-toggle text-center w-100">
 						<hr class="mb-4">
 						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
 						<input class="toggle" id="darkmode" type="checkbox">
 						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+						<hr class="mb-4">
+						<h4 class="toggle-name mb-3"><i class="fas fa-language me-1"></i>English</h4>
+						<input class="toggle" id="translateToggle" type="checkbox">
+						<label class="toggle-btn mx-auto mb-0" for="translateToggle"></label>
 					</div>
 				</div>
 			</nav>
@@ -87,12 +92,12 @@
 
 		<section class="cta-section theme-bg-light py-5">
 			<div class="container text-center single-col-max-width">
-				<h2 class="heading">Educação</h2>
+				<h2 class="heading" id="education" data-translate="true">Educação</h2>
 				<div class="intro">
-					<p> Me formei como Bacharel em Engenharia Civil, e atualmente sigo como Mestrando em Tecnologia da Informação com foco em Inteligência Computacional. Além disso, busco sempre refinar meus conhecimentos em programação, tecnologias, análise e tratamento de dados.</p>
+					<p id="education_introduction" data-translate="true"> Me formei como Bacharel em Engenharia Civil, e atualmente sigo como Mestrando em Tecnologia da Informação com foco em Inteligência Computacional. Além disso, busco sempre refinar meus conhecimentos em programação, tecnologias, análise e tratamento de dados.</p>
 				</div>
 				<a class="btn btn-primary" href="contact.html" target="_blank"><i
-						class="fas fa-paper-plane me-2"></i>Contate-me</a>
+						class="fas fa-paper-plane me-2"></i><span id="contact" data-translate="true">Contate-me</span></a>
 			</div>
 		</section>
 
@@ -104,9 +109,9 @@
 
 			<div class="text-center">
 				<ul id="filters" class="filters mb-5 mx-auto   ps-0">
-					<li class="type active mb-3 mb-lg-0" data-filter="*">All</li>
-					<li class="type  mb-3 mb-lg-0" data-filter=".diplomas">Diplomas</li>
-					<li class="type  mb-3 mb-lg-0" data-filter=".certificados">Certificados</li>
+					<li class="type active mb-3 mb-lg-0" data-filter="*"><span id="education_all" data-translate="true">Todos</span></li>
+					<li class="type  mb-3 mb-lg-0" data-filter=".diplomas"><span id="education_diplomes" data-translate="true">Diplomas</span></li>
+					<li class="type  mb-3 mb-lg-0" data-filter=".certificados"><span id="education_certificates" data-translate="true">Certificados</span></li>
 				</ul>
 			</div>
 
@@ -127,7 +132,7 @@
 								<div class="card-body">
 									<h5 class="card-title" style="text-align: center;"><a
 											href="assets/documents/diploma_bacharel.pdf"
-											class="theme-link">Bacharel em Engenharia Civil</a></h5>
+											class="theme-link" id="education_bachelor" data-translate="true">Bacharel em Engenharia Civil</a></h5>
 								</div>
 							</div>
 						</div>
@@ -137,7 +142,7 @@
 							<div class="link-mask-text">
 								<a class="btn btn-secondary"
 									href="assets/documents/diploma_bacharel.pdf">
-									<i class="fas fa-eye me-2"></i>Visualizar
+									<i class="fas fa-eye me-2"></i><span id="education_toview" data-translate="true">Visualizar</span>
 								</a>
 							</div>
 						</div>
@@ -159,7 +164,7 @@
 								<div class="card-body">
 									<h5 class="card-title" style="text-align: center;"><a
 											href="assets/documents/ufrn_certificado_1.pdf"
-											class="theme-link">Programador WEB</a></h5>
+											class="theme-link" id="education_web_developer" data-translate="true">Programador WEB</a></h5>
 								</div>
 							</div>
 						</div>
@@ -169,7 +174,7 @@
 							<div class="link-mask-text">
 								<a class="btn btn-secondary"
 									href="assets/documents/ufrn_certificado_1.pdf">
-									<i class="fas fa-eye me-2"></i>Visualizar
+									<i class="fas fa-eye me-2"></i><span id="education_toview" data-translate="true">Visualizar</span>
 								</a>
 							</div>
 						</div>
@@ -201,7 +206,7 @@
 							<div class="link-mask-text">
 								<a class="btn btn-secondary"
 									href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegrgugtgfjzxjkysbob2jyzwdh-2">
-									<i class="fas fa-eye me-2"></i>Visualizar
+									<i class="fas fa-eye me-2"></i><span id="education_toview" data-translate="true">Visualizar</span>
 								</a>
 							</div>
 						</div>
@@ -223,7 +228,7 @@
 								<div class="card-body">
 									<h5 class="card-title" style="text-align: center;"><a
 											href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegzgugtgfjzxjkysbow7nicmvnyq-0"
-											class="theme-link">Excel para Análise de Dados</a></h5>
+											class="theme-link" id="education_excel" data-translate="true">Excel para Análise de Dados</a></h5>
 								</div>
 							</div>
 						</div>
@@ -233,7 +238,7 @@
 							<div class="link-mask-text">
 								<a class="btn btn-secondary"
 									href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegrgugtgfjzxjkysbob2jyzwdh-0">
-									<i class="fas fa-eye me-2"></i>Visualizar
+									<i class="fas fa-eye me-2"></i><span id="education_toview" data-translate="true">Visualizar</span>
 								</a>
 							</div>
 						</div>
@@ -255,7 +260,7 @@
 								<div class="card-body">
 									<h5 class="card-title" style="text-align: center;"><a
 											href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegrgugtgfjzxjkysbob2jyzwdh-0"
-											class="theme-link">Fundamentos de Analytics</a></h5>
+											class="theme-link" id="education_fundaments" data-translate="true">Fundamentos de Analytics</a></h5>
 								</div>
 							</div>
 						</div>
@@ -265,7 +270,7 @@
 							<div class="link-mask-text">
 								<a class="btn btn-secondary"
 									href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegzgugtgfjzxjkysbow7nicmvnyq-0">
-									<i class="fas fa-eye me-2"></i>Visualizar
+									<i class="fas fa-eye me-2"></i><span id="education_toview" data-translate="true">Visualizar</span>
 								</a>
 							</div>
 						</div>
@@ -287,7 +292,7 @@
 								<div class="card-body">
 									<h5 class="card-title" style="text-align: center;"><a
 											href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegrgugtgfjzxjkysbob2jyzwdh-1"
-											class="theme-link">Power BI para Análise de Dados</a></h5>
+											class="theme-link" id="education_powerbi" data-translate="true">Power BI para Análise de Dados</a></h5>
 								</div>
 							</div>
 						</div>
@@ -297,7 +302,7 @@
 							<div class="link-mask-text">
 								<a class="btn btn-secondary"
 									href="https://sites.preditiva.ai/certificados/qwxlegfuzhjlievzdhjlbgegrgugtgfjzxjkysbob2jyzwdh-1">
-									<i class="fas fa-eye me-2"></i>Visualizar
+									<i class="fas fa-eye me-2"></i><span id="education_toview" data-translate="true">Visualizar</span>
 								</a>
 							</div>
 						</div>
@@ -335,6 +340,9 @@
 	<!-- Javascript -->
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Translate -->
+	<script src="assets/plugins/languages.js"></script>
 
 	<!--Page Specific JS -->
 	<script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
