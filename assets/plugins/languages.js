@@ -2,7 +2,7 @@
 let isTranslated = false;
 
 let originalTexts = {
-    
+  
     'apresentation': "Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!",
     'about_me': "Sobre mim",
     'projects': "Projetos",
@@ -46,7 +46,7 @@ let originalTexts = {
 }; 
 
 let translatedTexts = {
-    
+
     'apresentation': "Hi, my name is Alexandre Estrela de Lacerda Nobrega. Feel free to explore my portfolio!",
     'about_me': "About me",
     'projects': "Projects",
@@ -99,14 +99,17 @@ function translateToEnglish() {
     if (isTranslated) {
       element.innerText = translatedTexts[key];
 
-      document.getElementById("cname").setAttribute("placeholder", "Name");
-      document.getElementById("cmessage").setAttribute("placeholder", "Write your message");
-
+      if (window.location.href.includes("/contact")) {
+        document.getElementById("cname").setAttribute("placeholder", "Name");
+        document.getElementById("cmessage").setAttribute("placeholder", "Write your message");
+      }
     } else {
       element.innerText = originalTexts[key];
 
-      document.getElementById("cname").setAttribute("placeholder", "Nome");
-      document.getElementById("cmessage").setAttribute("placeholder", "Escreva sua mensagem");
+      if (window.location.href.includes("/contact")) {
+        document.getElementById("cname").setAttribute("placeholder", "Nome");
+        document.getElementById("cmessage").setAttribute("placeholder", "Escreva sua mensagem");
+      }
     }
   });
 }
