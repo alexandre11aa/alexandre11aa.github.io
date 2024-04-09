@@ -112,6 +112,16 @@ function translateToEnglish() {
       }
     }
   });
+
+  Cookies.set('translationState', isTranslated ? 'translated' : 'original');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const translationState = Cookies.get('translationState');
+  if (translationState === 'translated') {
+      translateToEnglish();
+      document.getElementById('translateToggle').checked = true;
+  }
+});
 
 document.getElementById('translateToggle').addEventListener('click', translateToEnglish);
