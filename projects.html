@@ -30,8 +30,9 @@
 				</button>
 				<div id="navigation" class="collapse navbar-collapse flex-column">
 					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/photos/alexandre_1.png" alt="image">
-						<div class="bio mb-3">Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!</div>
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/photos/alexandre_1.png"
+							alt="image">
+						<div class="bio mb-3" id="apresentation" data-translate="true">Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!</div>
 						<ul class="social-list list-inline py-2 mx-auto">
 							<li class="list-inline-item"><a href="https://www.linkedin.com/in/alexandre11aa/"><i
 										class="fab fa-linkedin-in fa-fw"></i></a></li>
@@ -46,30 +47,36 @@
 					</div>
 					<ul class="navbar-nav flex-column text-start">
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>Sobre mim</a>
+							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>
+								<span id="about_me" data-translate="true">Sobre mim</span></a>
 						</li>
 						<li class="nav-item scrollto active">
-							<a class="nav-link active" href="projects.html"><i
-									class="fas fa-laptop-code fa-fw me-2"></i>Projetos</a><span
-									class="sr-only">(current)</span>
+							<a class="nav-link active" href="projects.html"><i class="fas fa-laptop-code fa-fw me-2"></i>
+							<span id="projects" data-translate="true">Projetos</span>
+							<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resumo</a>
+							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>
+							<span id="resume" data-translate="true">Resumo</span></a></a>
 						</li>
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="education.html"><i
-									class="fas fa-certificate fa-fw me-2"></i>Educação</a>
+							<a class="nav-link" href="education.html"><i class="fas fa-certificate fa-fw me-2"></i>
+							<span id="education" data-translate="true">Educação</span></a></a></a>
 						</li>
 					</ul>
 					<div class="my-2">
-						<a class="btn btn-primary scrollto" href="contact.html" target="_blank"><i
-								class="fas fa-paper-plane me-2"></i>Contate-me</a>
+						<a class="btn btn-primary scrollto" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>
+						<span id="contact" data-translate="true">Contate-me</span></a></a></a>
 					</div>
 					<div class="dark-mode-toggle text-center w-100">
 						<hr class="mb-4">
 						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
 						<input class="toggle" id="darkmode" type="checkbox">
 						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+						<hr class="mb-4">
+						<h4 class="toggle-name mb-3"><i class="fas fa-language me-1"></i>English</h4>
+						<input class="toggle" id="translateToggle" type="checkbox">
+						<label class="toggle-btn mx-auto mb-0" for="translateToggle"></label>
 					</div>
 				</div>
 			</nav>
@@ -85,10 +92,11 @@
 			<div class="container text-center single-col-max-width">
 				<h2 class="heading">Projetos</h2>
 				<div class="intro">
-					<p>Seja bem-vindo à minha página de projetos! Aqui você pode conferir algoritmos, análises, artigos e projetos que desenvolvi
-					   ao longo da minha vida profissional e acadêmica, incluindo minha experiência com linguagens de programação, bibliotecas e
-					   tecnologias.
-					</p>
+					<p><span id="projects_introduction" data-translate="true">
+						Seja bem-vindo à minha página de projetos! Aqui você pode conferir algoritmos, análises, artigos e projetos que desenvolvi
+						ao longo da minha vida profissional e acadêmica, incluindo minha experiência com linguagens de programação, bibliotecas e
+						tecnologias.
+					</span></p>
 				</div>
 			</div>
 		</section>
@@ -98,388 +106,17 @@
 
 				<div class="text-center">
 					<ul id="filters" class="filters mb-5 mx-auto ps-0">
-						<li class="type active mb-3 mb-lg-0" data-filter="*">Tudo</li>
-						<li class="type  mb-3 mb-lg-0" data-filter=".analises">Análises</li>
-						<li class="type  mb-3 mb-lg-0" data-filter=".codigos">Códigos</li>
-						<li class="type  mb-3 mb-lg-0" data-filter=".estudos">Estudos</li>
-						<li class="type  mb-3 mb-lg-0" data-filter=".graficos">Gráficos</li>	
+						<li class="type active mb-3 mb-lg-0" data-filter="*"><span id="projects_all" data-translate="true">Tudo</span></li>
+						<li class="type  mb-3 mb-lg-0" data-filter=".analises"><span id="projects_analyses" data-translate="true">Análises</span></li>
+						<li class="type  mb-3 mb-lg-0" data-filter=".codigos"><span id="projects_codes" data-translate="true">Códigos</span></li>
+						<li class="type  mb-3 mb-lg-0" data-filter=".estudos"><span id="projects_studies" data-translate="true">Estudos</span></li>
+						<li class="type  mb-3 mb-lg-0" data-filter=".graficos"><span id="projects_charts" data-translate="true">Gráficos</span></li>	
 					</ul>
 				</div>
 			
 				<div class="project-cards row isotope">
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 estudos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/tcc_intensio.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Trabalho de Conclusão de Curso</a></h5>
-										<p class="card-text">Trabalho de Conclusão de Curso para obtenção do título de Bacharel em Engenharia Civil, 
-															 que trata do desenvolvimento da ferramenta para cálculo da equação de chuvas Intensio.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Estudos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="10.13140/RG.2.2.13718.73286">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 estudos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/artigo_intensio.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Artigo ciêntifico sobre ferramenta Intensio</a></h5>
-										<p class="card-text">Desenvolvimento de ferramenta computacional para determinação de equações de chuvas intensas: 
-															 O artigo aborda o desenvolvimento e estudos da ferramenta Intensio.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Estudos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/551">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 estudos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/artigo_geobi.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Artigo ciêntifico sobre ferramenta GeoBi</a></h5>
-										<p class="card-text">Ferramenta GIS para auxílio em traçado de áreas de contribuição: O artigo científico que aborda 
-															 a ferramenta GeoBi, desenvolvida para o traçado de áreas de contribuição.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Estudos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/intensio.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Código fonte do Intensio</h5>
-										<p class="card-text">Código fonte da ferramenta computacional Intensio, criada para desktop com o objetivo de 
-															 calcular a equação de chuvas intensas.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/intensio">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/geobi.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Código fonte do GeoBi</h5>
-										<p class="card-text">Código fonte da ferramenta computacional GeoBi, criada para desktop e como plug-in
-															 para o software QGIS, com o objetivo de calcular áreas de contribuição.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/geobi">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/proloss.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Código fonte do ProLoss</h5>
-										<p class="card-text">Código fonte da ferramenta computacional ProLoss, criada para desktop com o objetivo de 
-															 calcular perdas de protensão.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/proloss">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/processamento_de_dados.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Métodos de Processamento de Dados</h5>
-										<p class="card-text">Cadernos sobre diferentes métodos de processamento de dados, desenvolvidos com as bibliotecas pandas, scikit-learn, 
-											matplotlib, dentre outras da linguagem Python.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/notebooks/tree/main/data_processing">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/seusEventos.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Projeto de site para criação de eventos</h5>
-										<p class="card-text">Projeto de site destinado a criação de eventos de nome "Seus Eventos", desenvolvido em Django e Bootstrap 
-															 com banco de dados SQLite.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/seusEventos">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/tcc_latex.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Trabalho de Conclusão de Curso em LaTeX</h5>
-										<p class="card-text">Código em LaTeX do meu Trabalho de Conclusão de Curso: Desenvolvimento de ferramenta 
-															 computacional para determinação de equações de chuvas intensas.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/tcc?tab=readme-ov-file">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/beecrowd.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Questões resolvidas do Beecrowd</a></h5>
-										<p class="card-text">Questões Resolvidas do Beecrowd (URI).	Os problemas postados geralmente estão classificadas 
-															 nas áreas "Iniciante", "Strings" e "Matemática" do Beecrowd.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/beecrowd">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/tkinter.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Programas para desktop em Tkinter</h5>
-										<p class="card-text">Algoritmos com interface gráfica para desktop windows programado em python através da biblioteca 
-															 nativa da linguagem, o tkinter.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/tkinter">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
-
-					<div class="isotope-item col-md-6 mb-5 codigos">
-						<div class="card project-card">
-							<div class="row">
-								<div class="card-img-holder">
-									<img src="assets/images/projects/math.png" class="card-img" alt="image">
-								</div>
-								<div class="">
-									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Algoritmos de cálculo</h5>
-										<p class="card-text">Algoritmos especializados em realizar cálculos matemáticos, comumente utilizados para resolver problemas numéricos.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Códigos</small>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="project.html"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/matematica">
-										<i class="fas fa-eye me-2"></i>Visualizar
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Fim -->
-
-					<!-- Início -->
+				
+					<!-- Início de Análises -->
 
 					<div class="isotope-item col-md-6 mb-5 analises">
 						<div class="card project-card">
@@ -489,19 +126,18 @@
 								</div>
 								<div class="">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Digit Recognizer</h5>
-										<p class="card-text">Implementações em Python de algoritmos de aprendizado de máquina profundo, utilizados para criar modelos preditivos para identificar imagens, 
-															 no desafio Digit Recognizer do Kaggle.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Análises</small>
-										</p>
+										<h5 class="card-title"><a href="project.html" class="theme-link">Digit Recognizer</a></h5>
+										<p class="card-text"><span id="projects_analyses_dr_description" data-translate="true">
+											Implementações em Python de algoritmos de aprendizado de máquina profundo, utilizados para criar modelos preditivos para identificar imagens, no desafio Digit Recognizer do Kaggle.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_analyses" data-translate="true">Análises</span></small></p>
 									</div>
 								</div>
 							</div>
 							<div class="link-mask">
 								<a class="link-mask-link" href="project.html"></a>
 								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/notebooks/blob/main/data_science/digit_recognizer.ipynb">
-										<i class="fas fa-eye me-2"></i>Visualizar
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
 									</a>
 								</div>
 							</div>
@@ -520,19 +156,18 @@
 								</div>
 								<div class="">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Don't Overfit! II</h5>
-										<p class="card-text">Implementações em Python de algoritmos de aprendizado de máquina, utilizados para criar modelos preditivos robustos com poucos dados, 
-															 no desafio Don't Overfit! II do Kaggle.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Análises</small>
-										</p>
+										<h5 class="card-title"><a href="project.html" class="theme-link">Don't Overfit! II</a></h5>
+										<p class="card-text"><span id="projects_analyses_doii_description" data-translate="true">
+											Implementações em Python de algoritmos de aprendizado de máquina, utilizados para criar modelos preditivos robustos com poucos dados, no desafio Don't Overfit! II do Kaggle.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_analyses" data-translate="true">Análises</span></small></p>
 									</div>
 								</div>
 							</div>
 							<div class="link-mask">
 								<a class="link-mask-link" href="project.html"></a>
 								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/notebooks/blob/main/data_science/dont_overfit_ii.ipynb">
-										<i class="fas fa-eye me-2"></i>Visualizar
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
 									</a>
 								</div>
 							</div>
@@ -551,19 +186,18 @@
 								</div>
 								<div class="">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Óbitos por Febre Amarela no Brasil</h5>
-										<p class="card-text">Implementações em Python de algoritmos de aprendizado de máquinas supervisionado, utilizados para prever o óbito de enfermos que 
-											contraíram febre amarela no Brasil.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Análises</small>
-										</p>
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_analyses_ofab_title" data-translate="true">Óbitos por Febre Amarela no Brasil</span></a></h5>
+										<p class="card-text"><span id="projects_analyses_ofab_description" data-translate="true">
+											Implementações em Python de algoritmos de aprendizado de máquinas supervisionado, utilizados para prever o óbito de enfermos que contraíram febre amarela no Brasil.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_analyses" data-translate="true">Análises</span></small></p>
 									</div>
 								</div>
 							</div>
 							<div class="link-mask">
 								<a class="link-mask-link" href="project.html"></a>
 								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/notebooks/blob/main/data_science/obitos_por_fa.ipynb">
-										<i class="fas fa-eye me-2"></i>Visualizar
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
 									</a>
 								</div>
 							</div>
@@ -582,19 +216,48 @@
 								</div>
 								<div class="">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Titanic - Machine Learning from Disaster</h5>
-										<p class="card-text">Implementações em Python de algoritmos de aprendizado de máquinas supervisionado, utilizados para prever a sobrevivência 
-															 de passageiros do Titanic no desafio Kaggle.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Análises</small>
-										</p>
+										<h5 class="card-title"><a href="project.html" class="theme-link">Titanic - Machine Learning from Disaster</a></h5>
+										<p class="card-text"><span id="projects_analyses_titanic_description" data-translate="true">
+											Implementações em Python de algoritmos de aprendizado de máquinas supervisionado, utilizados para prever a sobrevivência de passageiros do Titanic no desafio Kaggle.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_analyses" data-translate="true">Análises</span></small></p>
 									</div>
 								</div>
 							</div>
 							<div class="link-mask">
 								<a class="link-mask-link" href="project.html"></a>
 								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://github.com/alexandre11aa/notebooks/blob/main/data_science/titanic.ipynb">
-										<i class="fas fa-eye me-2"></i>Visualizar
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início de Códigos -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/intensio.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_intensio_title" data-translate="true">Código fonte do Intensio</span></a></h5>
+										<p class="card-text"><span id="projects_codes_intensio_description" data-translate="true">
+											Código fonte da ferramenta computacional Intensio, criada para desktop com o objetivo de calcular a equação de chuvas intensas.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
 									</a>
 								</div>
 							</div>
@@ -605,6 +268,336 @@
 
 					<!-- Início -->
 
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/geobi.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_geobi_title" data-translate="true">Código fonte do GeoBi</span></a></h5>
+										<p class="card-text"><span id="projects_codes_geobi_description" data-translate="true">
+											Código fonte da ferramenta computacional GeoBi, criada para desktop e como plug-in para o software QGIS, com o objetivo de calcular áreas de contribuição.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/proloss.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_proloss_title" data-translate="true">Código fonte do ProLoss</span></a></h5>
+										<p class="card-text"><span id="projects_codes_proloss_description" data-translate="true">
+											Código fonte da ferramenta computacional ProLoss, criada para desktop com o objetivo de calcular perdas de protensão.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/processamento_de_dados.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_mpd_title" data-translate="true">Métodos de Processamento de Dados</span></a></h5>
+										<p class="card-text"><span id="projects_codes_mpd_description" data-translate="true">
+											Cadernos sobre diferentes métodos de processamento de dados, desenvolvidos com as bibliotecas pandas, scikit-learn, matplotlib, dentre outras da linguagem Python.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/seusEventos.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_seuseventos_title" data-translate="true">Projeto de site para criação de eventos</span></a></h5>
+										<p class="card-text"><span id="projects_codes_seuseventos_description" data-translate="true">
+											Projeto de site destinado a criação de eventos de nome "Seus Eventos", desenvolvido em Django e Bootstrap com banco de dados SQLite.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/tcc_latex.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_tcc_title" data-translate="true">Trabalho de Conclusão de Curso em LaTeX</span></a></h5>
+										<p class="card-text"><span id="projects_codes_tcc_description" data-translate="true">
+											Código em LaTeX do meu Trabalho de Conclusão de Curso: Desenvolvimento de ferramenta computacional para determinação de equações de chuvas intensas.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/beecrowd.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_beecrowd_title" data-translate="true">Questões resolvidas do Beecrowd</span></a></h5>
+										<p class="card-text"><span id="projects_codes_beecrowd_description" data-translate="true">
+											Questões Resolvidas do Beecrowd (URI). Os problemas postados geralmente estão classificadas nas áreas "Iniciante", "Strings" e "Matemática" do Beecrowd.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/tkinter.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_tkinter_title" data-translate="true">Programas para desktop em Tkinter</span></a></h5>
+										<p class="card-text"><span id="projects_codes_tkinter_description" data-translate="true">
+											Algoritmos com interface gráfica para desktop windows programado em python através da biblioteca nativa da linguagem, o tkinter.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 codigos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/math.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_codes_ac_title" data-translate="true">Algoritmos de cálculo</span></a></h5>
+										<p class="card-text"><span id="projects_codes_ac_description" data-translate="true">
+											Algoritmos especializados em realizar cálculos matemáticos, comumente utilizados para resolver problemas numéricos.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_codes" data-translate="true">Códigos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início de Estudos -->
+
+					<div class="isotope-item col-md-6 mb-5 estudos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/tcc_intensio.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_studies_tcc_title" data-translate="true">Trabalho de Conclusão de Curso</span></a></h5>
+										<p class="card-text"><span id="projects_studies_tcc_description" data-translate="true">
+												Trabalho de Conclusão de Curso para obtenção do título de Bacharel em Engenharia Civil, que trata do desenvolvimento da ferramenta para cálculo da equação de chuvas Intensio.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_studies" data-translate="true">Estudos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="10.13140/RG.2.2.13718.73286">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 estudos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/artigo_intensio.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_studies_intensio_title" data-translate="true">Artigo ciêntifico sobre ferramenta Intensio</span></a></h5>
+										<p class="card-text"><span id="projects_studies_intensio_description" data-translate="true">
+												Desenvolvimento de ferramenta computacional para determinação de equações de chuvas intensas: O artigo aborda o desenvolvimento e estudos da ferramenta Intensio.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_studies" data-translate="true">Estudos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/551">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início -->
+
+					<div class="isotope-item col-md-6 mb-5 estudos">
+						<div class="card project-card">
+							<div class="row">
+								<div class="card-img-holder">
+									<img src="assets/images/projects/artigo_geobi.png" class="card-img" alt="image">
+								</div>
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_studies_geobi_title" data-translate="true">Artigo ciêntifico sobre ferramenta GeoBi</span></a></h5>
+										<p class="card-text"><span id="projects_studies_geobi_description" data-translate="true">
+												Ferramenta GIS para auxílio em traçado de áreas de contribuição: O artigo científico que aborda a ferramenta GeoBi, desenvolvida para o traçado de áreas de contribuição.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_studies" data-translate="true">Estudos</span></small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fim -->
+
+					<!-- Início de Gráficos -->
+
 					<div class="isotope-item col-md-6 mb-5 graficos">
 						<div class="card project-card">
 							<div class="row">
@@ -613,21 +606,21 @@
 								</div>
 								<div class="">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link"></a>Painel de Óbitos por Febre Amarela no Brasil</h5>
-										<p class="card-text">Painel com gráficos de estudo, criado a partir de modelos de aprendizado de máquinas, para prever o óbito de enfermos 
-											que contraíram febre amarela no Brasil.</p>
-										<p class="card-text"><small class="text-muted">Categoria: Gráficos</small>
-										</p>
+										<h5 class="card-title"><a href="project.html" class="theme-link"><span id="projects_charts_ofab_title" data-translate="true">Painel de Óbitos por Febre Amarela no Brasil</span></a></h5>
+										<p class="card-text"><span id="projects_charts_ofab_description" data-translate="true">
+											Painel com gráficos de estudo, criado a partir de modelos de aprendizado de máquinas, para prever o óbito de enfermos que contraíram febre amarela no Brasil.</span></p>
+										<p class="card-text"><small class="text-muted"><span id="projects_category" data-translate="true">Categoria: </span><span id="projects_charts" data-translate="true">Gráficos</span></small></p>
 									</div>
 								</div>
 							</div>
 							<div class="link-mask">
 								<a class="link-mask-link" href="project.html"></a>
 								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://app.powerbi.com/view?r=eyJrIjoiYWE0ZmY4NDMtMjM1My00MTE4LTljOTctZWIxMzEyMDE4ODlkIiwidCI6IjFmMTVmODBkLTk3YTgtNDI3Zi1hOTYyLWQ4ZjRiZGM4MzI3NiJ9">
-										<i class="fas fa-eye me-2"></i>Visualizar
+									<a class="btn btn-secondary" href="https://coopex.unifip.edu.br/index.php/coopex/article/view/550">
+										<i class="fas fa-eye me-2"></i><span id="projects_toview" data-translate="true">Visualizar</span>
 									</a>
 								</div>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -664,6 +657,9 @@
 	<!-- Javascript -->
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Translate -->
+	<script src="assets/plugins/languages.js"></script>
 
 	<!--Page Specific JS -->
 	<script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
