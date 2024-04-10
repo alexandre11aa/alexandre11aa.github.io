@@ -31,7 +31,7 @@
 					<div class="profile-section pt-3 pt-lg-0">
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/photos/alexandre_1.png"
 							alt="image">
-						<div class="bio mb-3">Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!</div>
+						<div class="bio mb-3" id="apresentation" data-translate="true">Olá, me chamo Alexandre Estrela de Lacerda Nobrega. Sinta-se à vontade para explorar meu portfólio!</div>
 						<ul class="social-list list-inline py-2 mx-auto">
 							<li class="list-inline-item"><a href="https://www.linkedin.com/in/alexandre11aa/"><i
 										class="fab fa-linkedin-in fa-fw"></i></a></li>
@@ -46,30 +46,36 @@
 					</div>
 					<ul class="navbar-nav flex-column text-start">
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>Sobre mim</a>
+							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>
+								<span id="about_me" data-translate="true">Sobre mim</span></a>
 						</li>
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="projects.html"><i
-									class="fas fa-laptop-code fa-fw me-2"></i>Projetos</a>
+							<a class="nav-link" href="projects.html"><i class="fas fa-laptop-code fa-fw me-2"></i>
+							<span id="projects" data-translate="true">Projetos</span></a>
 						</li>
 						<li class="nav-item scrollto active">
-							<a class="nav-link active" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resumo<span
-                               class="sr-only">(current)</span></a>
+							<a class="nav-link active" href="curriculum.html"><i class="fas fa-file-alt fa-fw me-2"></i>
+							<span id="curriculum" data-translate="true">Currículo</span>
+							<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item scrollto">
-							<a class="nav-link" href="education.html"><i
-									class="fas fa-certificate fa-fw me-2"></i>Educação</a>
+							<a class="nav-link" href="education.html"><i class="fas fa-certificate fa-fw me-2"></i>
+							<span id="education" data-translate="true">Educação</span></a>
 						</li>
 					</ul>
 					<div class="my-2">
-						<a class="btn btn-primary scrollto" href="contact.html" target="_blank"><i
-								class="fas fa-paper-plane me-2"></i>Contate-me</a>
+						<a class="btn btn-primary scrollto" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>
+						<span id="contact" data-translate="true">Contate-me</span></a>
 					</div>
 					<div class="dark-mode-toggle text-center w-100">
 						<hr class="mb-4">
 						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
 						<input class="toggle" id="darkmode" type="checkbox">
 						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+						<hr class="mb-4">
+						<h4 class="toggle-name mb-3"><i class="fas fa-language me-1"></i>English</h4>
+						<input class="toggle" id="translateToggle" type="checkbox">
+						<label class="toggle-btn mx-auto mb-0" for="translateToggle"></label>
 					</div>
 				</div>
 			</nav>
@@ -101,6 +107,9 @@
 	<!-- Javascript -->
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Translate -->
+	<script src="assets/plugins/languages.js"></script>
 
 	<!--Page Specific JS -->
 	<script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
