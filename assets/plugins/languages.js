@@ -263,12 +263,23 @@ function translateToEnglish() {
         document.getElementById("cname").setAttribute("placeholder", "Name");
         document.getElementById("cmessage").setAttribute("placeholder", "Write your message");
       }
+
+      if (window.location.href.includes("/resume")) {
+        document.getElementById("crecume_pdf").setAttribute('href', 'assets/documents/resume.pdf');
+        document.getElementById("crecume_doc").setAttribute('href', 'https://docs.google.com/document/d/1WLldEnv7XJdF0XkMpsodLAIHI-OFnphG/edit?usp=sharing&ouid=112037969560777401845&rtpof=true&sd=true');
+      }
+
     } else {
       element.innerText = originalTexts[key];
 
       if (window.location.href.includes("/contact")) {
         document.getElementById("cname").setAttribute("placeholder", "Nome");
         document.getElementById("cmessage").setAttribute("placeholder", "Escreva sua mensagem");
+      }
+
+      if (window.location.href.includes("/resume")) {
+        document.getElementById("crecume_pdf").setAttribute('href', 'assets/documents/curriculo.pdf');
+        document.getElementById("crecume_doc").setAttribute('href', 'https://docs.google.com/document/d/1wtyq2lnxZwDkrb8E31TMSXXGM2PJatUh/edit?usp=drive_link&ouid=112037969560777401845&rtpof=true&sd=true');
       }
     }
   });
