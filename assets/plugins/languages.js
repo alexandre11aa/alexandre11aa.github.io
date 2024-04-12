@@ -265,8 +265,8 @@ function translateToEnglish() {
       }
 
       if (window.location.href.includes("/resume")) {
-        document.getElementById("crecume_pdf").setAttribute('href', 'assets/documents/resume.pdf');
-        document.getElementById("crecume_doc").setAttribute('href', 'https://docs.google.com/document/d/1WLldEnv7XJdF0XkMpsodLAIHI-OFnphG/edit?usp=sharing&ouid=112037969560777401845&rtpof=true&sd=true');
+        document.getElementById("cresume_pdf").setAttribute('href', 'assets/documents/resume.pdf');
+        document.getElementById("cresume_doc").setAttribute('href', 'https://docs.google.com/document/d/1WLldEnv7XJdF0XkMpsodLAIHI-OFnphG/edit?usp=sharing&ouid=112037969560777401845&rtpof=true&sd=true');
       }
 
     } else {
