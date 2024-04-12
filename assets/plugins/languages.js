@@ -278,8 +278,8 @@ function translateToEnglish() {
       }
 
       if (window.location.href.includes("/resume")) {
-        document.getElementById("crecume_pdf").setAttribute('href', 'assets/documents/curriculo.pdf');
-        document.getElementById("crecume_doc").setAttribute('href', 'https://docs.google.com/document/d/1wtyq2lnxZwDkrb8E31TMSXXGM2PJatUh/edit?usp=drive_link&ouid=112037969560777401845&rtpof=true&sd=true');
+        document.getElementById("cresume_pdf").setAttribute('href', 'assets/documents/curriculo.pdf');
+        document.getElementById("cresume_doc").setAttribute('href', 'https://docs.google.com/document/d/1wtyq2lnxZwDkrb8E31TMSXXGM2PJatUh/edit?usp=drive_link&ouid=112037969560777401845&rtpof=true&sd=true');
       }
     }
   });
