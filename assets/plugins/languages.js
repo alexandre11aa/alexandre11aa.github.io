@@ -10,8 +10,8 @@ let originalTexts = {
     'education': "Educação",
     'contact': "Contate-me",
     
-    'index_professional_field': "Ciência de Dados | Análise de Dados | AI/ML",
-    'index_about_me_1': "Sou Bacharel em Engenharia Civil, e Mestrando em Tecnologia da Informação seguindo pela linha de pesquisa em Inteligência Computacional. Minha especialidade é em Ciência de Dados. Confira alguns dos",
+    'index_professional_field': "Estudante de Mestrado em TI",
+    'index_about_me_1': "Sou Bacharel em Engenharia Civil, e Mestrando em Tecnologia da Informação seguindo pela linha de pesquisa em Inteligência Computacional. Confira alguns dos",
     'index_about_me_2': "programas, algoritmos, estudos e projetos",
     'index_about_me_3': "que desenvolvi.",
     'index_button_1': "Veja meus",
@@ -136,8 +136,8 @@ let translatedTexts = {
     'education': "Education",
     'contact': "Contact me",
     
-    'index_professional_field': "Data Science | Data Analysis | AI/ML",
-    'index_about_me_1': "I have a Bachelor's degree in Civil Engineering, and I am a Master's student in Information Technology following the line of research in Computational Intelligence. My specialty is in Data Science. Check out some of the",
+    'index_professional_field': "Master's Student in IT",
+    'index_about_me_1': "I have a Bachelor's degree in Civil Engineering, and I am a Master's student in Information Technology following the line of research in Computational Intelligence. Check out some of the",
     'index_about_me_2': "programs, algorithms, studies and projects",
     'index_about_me_3': "I developed.",
     'index_button_1': "See my",
