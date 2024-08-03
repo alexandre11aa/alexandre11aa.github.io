@@ -63,6 +63,8 @@ let originalTexts = {
     'projects_charts_ofab_description': "Painel com gráficos de estudo, criado a partir de modelos de aprendizado de máquinas, para prever o óbito de enfermos que contraíram febre amarela no Brasil.",
     'projects_web_bohconvert_title': 'Projeto de site para conversão entre sistemas de numeração',
     'projects_web_bohconvert_description': 'Projeto de site usando Docker e Kubernetes de nome "BOHConvert", desenvolvido em Django e Bootstrap com banco de dados PostgreSQL.',
+    'projects_web_midiatorrents_title': "Projeto de site para agregar links torrent",
+    'projects_web_midiatorrents_description': 'Projeto de site usando desenvolvido em Python, Django, Javascript, CSS e HTML para agregar links torrent de filmes.',
     'projects_web_seuseventos_title': "Projeto de site para criação de eventos",
     'projects_web_seuseventos_description': 'Projeto de site destinado a criação de eventos de nome "Seus Eventos", desenvolvido em Django e Bootstrap com banco de dados SQLite.',
 
@@ -200,6 +202,8 @@ let translatedTexts = {
     'projects_charts_ofab_description': "Panel with study charts, created from machine learning models, to predict the death of individuals who contracted yellow fever in Brazil.",
     'projects_web_bohconvert_title': 'Website project for conversion between numbering systems',
     'projects_web_bohconvert_description': "Website project using Docker and Kubernetes named 'BOHConvert', developed in Django and Bootstrap with PostgreSQL database.",
+    'projects_web_midiatorrents_title': "Website project to aggregate torrent links",
+    'projects_web_midiatorrents_description': 'Website project using Python, Django, Javascript, CSS and HTML to aggregate movie torrent links.',
     'projects_web_seuseventos_title': "Event Creation Website Project",
     'projects_web_seuseventos_description': 'Website project for event creation named "Seus Eventos", developed in Django and Bootstrap with SQLite database.',
 
