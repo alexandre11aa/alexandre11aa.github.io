@@ -203,7 +203,7 @@ let translatedTexts = {
     'projects_web_bohconvert_title': 'Website project for conversion between numbering systems',
     'projects_web_bohconvert_description': "Website project using Docker and Kubernetes named 'BOHConvert', developed in Django and Bootstrap with PostgreSQL database.",
     'projects_web_midiatorrents_title': "Website project to aggregate torrent links",
-    'projects_web_midiatorrents_description': 'Website project using Python, Django, Javascript, CSS and HTML to aggregate movie torrent links.',
+    'projects_web_midiatorrents_description': 'Website project using Python, Django, Javascript, CSS, and HTML to aggregate, organize, and display movie torrent links.',
     'projects_web_seuseventos_title': "Event Creation Website Project",
     'projects_web_seuseventos_description': 'Website project for event creation named "Seus Eventos", developed in Django and Bootstrap with SQLite database.',
 
