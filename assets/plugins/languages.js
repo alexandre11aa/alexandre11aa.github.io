@@ -321,6 +321,7 @@ let translatedTexts = {
     'contact_subject_5': "Graphics",
     'contact_about_me_1': "Interested in getting to know me better? Check out the page ",
     'contact_your_message_1': "To Send",
+    
 };
 
 function translateToEnglish() {
